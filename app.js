@@ -13,9 +13,9 @@ const RedisStore = require('connect-redis')(session);
 const appRouter = require('./routers');
 const errorHandler = require('./middlewares/errorMiddleware');
 const { ApiError } = require('./utils/customUtils');
-const { PORT, isProduction, DB_URL } = require('./config');
+const { PORT, isProduction, DB_URL, REDIS_CONFIG } = require('./config');
 
-const client = redis.createClient();
+const client = redis.createClient(REDIS_CONFIG);
 
 // Initializing Application
 const app = express();
@@ -62,6 +62,7 @@ mongoose.connect(DB_URL)
         });
     })
     .catch((_) => {
+        console.log(_);
         console.log('Unable to connect to DB and start Server.')
         process.exit(1);
     })
