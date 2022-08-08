@@ -1,0 +1,50 @@
+.Footer {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+.LeftFooterContainer {
+    width: 40%;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px auto;
+}
+.FooterTitle {
+    font-size: 35px;
+    font-style: oblique;
+}
+.FooterTitle img {
+    width: 25px;
+    height: 25px;
+}
+.RightFooterContainer {
+    width: 25%;
+    /* font-style: oblique; */
+    text-align: center;
+    padding: 20px auto;
+    border-left: 1px solid #000000;
+}
+.TeamMembers {
+    text-align: center;
+    margin-top: 15px;
+}
+.TeamMembers img {
+    width: 25px;
+    height:25px;
+    margin: 0px 5px;
+}
+.Kunal {
+    display: flex;
+}
+.Kevin {
+    display: flex;
+}
+.Arnav {
+    display: flex;
+}
+.Name {
+    padding: 0px 20px;
+}
