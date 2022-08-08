@@ -10,6 +10,10 @@ const DoctorSchema = new Schema({
     registrationNo: {
         type: String,
         required: true,
+    },
+    yearOfPassing: {
+        type: String,
+        required: true,
     }
 });
 

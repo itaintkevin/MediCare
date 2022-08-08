@@ -30,6 +30,9 @@ const UserSchema = new Schema({
     },
     phone: {
         type: String,
+    },
+    aadharNo: {
+        type: String,
     }
 }, {
     timestamps: true,
