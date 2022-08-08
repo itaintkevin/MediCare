@@ -11,11 +11,11 @@ const mainAppPath = path.resolve(__dirname, '../main-client', 'build');
 const doctorAppPath = path.resolve(__dirname, '../doctor-client', 'build');
 const patientAppPath = path.resolve(__dirname, '../patient-client', 'build');
 
-Router.use('/', express.static(mainAppPath));
+Router.use('/home', express.static(mainAppPath));
 Router.use('/doctor', express.static(doctorAppPath));
 Router.use('/patient', express.static(patientAppPath));
 
-Router.get('/*', (req, res) => {
+Router.get('/home/*', (req, res) => {
     res.sendFile(path.resolve(mainAppPath, 'index.html'));
     res.end();
 });
