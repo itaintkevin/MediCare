@@ -13,8 +13,31 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    dateOfBirth: {
+        type: Date,
+    },
+    address: {
+        type: String,
+    },
+    gender: {
+        type: String,
+    },
+    phone: {
+        type: String,
     }
 }, {
     timestamps: true,
     strict: true,
+    discriminatorKey: 'role'
 });
+
+// user model
+const User = model('User', UserSchema);
+
+module.exports = User;
