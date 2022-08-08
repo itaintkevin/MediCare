@@ -15,6 +15,11 @@ Router.use('/home', express.static(mainAppPath));
 Router.use('/doctor', express.static(doctorAppPath));
 Router.use('/patient', express.static(patientAppPath));
 
+Router.get('/', (req, res) => {
+    res.redirect('/home');
+    res.end();
+})
+
 Router.get('/home/*', (req, res) => {
     res.sendFile(path.resolve(mainAppPath, 'index.html'));
     res.end();

@@ -11,6 +11,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const configuration = {
     PORT: process.env.PORT || 5000,
     isProduction,
+    REGISTER_NUM_VERIFY_URL: 'https://www.nmc.org.in/MCIRest/open/getDataFromService?service=searchDoctor'
 }
 
 // Export configuration

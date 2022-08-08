@@ -7,7 +7,7 @@ const { Schema, model } = require('mongoose');
 const User = require('./User')
 
 const DoctorSchema = new Schema({
-    registrationNumber: {
+    registrationNo: {
         type: String,
         required: true,
     }

@@ -3,10 +3,12 @@
  */
 
 // Dependencies
-const {ApiError} = require('../utils/customUtils');
+const { ApiError } = require('../utils/customUtils');
+const { isProduction } = require('../config')
 
 const errorHandler = (err, req, res, next) => {
-    if(err instanceof ApiError){
+    !isProduction && console.log(err);
+    if (err instanceof ApiError) {
         return res.status(err.statusCode).json({
             message: err.message,
             success: false,
