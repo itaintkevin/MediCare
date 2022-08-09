@@ -1,6 +1,7 @@
 {
   "name": "patient-client",
   "version": "0.1.0",
+	"homepage": "https://medicare-hackathon.herokuapp.com/patient",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",

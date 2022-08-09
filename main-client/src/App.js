@@ -7,10 +7,10 @@ import './App.css';
 function App() {
   return (
     <>
-    <NavBar />
-    <Hero />
-    <Features />
-    <Footer />
+      <NavBar />
+      <Hero />
+      <Features />
+      <Footer />
     </>
   );
 }
