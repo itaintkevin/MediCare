@@ -1,73 +1,73 @@
 .NavBar {
-    background-color: #F6F6F6;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	background-color: #f6f6f6;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .NavLeftContainer {
-    width: 40%;
+	width: 40%;
 }
 .NavTitle {
-    font-size: 35px;
-    font-style: oblique;
+	font-size: 35px;
+	font-style: oblique;
 }
 .NavTitle img {
-    width: 25px;
-    height: 25px;
+	width: 25px;
+	height: 25px;
 }
 .NavRightContainer {
-    width: 20%;
+	width: 20%;
 }
 .LoginButton {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    /* font-style: oblique; */
-    color: white;
-    padding: 10px 20px;
-    background-color: #444141;
-    text-shadow: #F6F6F6;
-    border-radius: 5px;
-    box-shadow: 2px 2px  #d6cbcb;
-    margin: 0px 10px 0px 10px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	/* font-style: oblique; */
+	color: white;
+	padding: 10px 20px;
+	background-color: #444141;
+	text-shadow: #f6f6f6;
+	border-radius: 5px;
+	box-shadow: 2px 2px #d6cbcb;
+	margin: 0px 10px 0px 10px;
 }
 
 @media screen and (max-width: 1675px) {
-    .NavLeftContainer {
-        width: 30%;
-    }
-    .NavRightContainer {
-        width: 30%;
-    }
+	.NavLeftContainer {
+		width: 30%;
+	}
+	.NavRightContainer {
+		width: 30%;
+	}
 }
 
 @media screen and (max-width: 1200px) {
-    .NavLeftContainer {
-        width: 25%;
-    }
-    .NavRightContainer {
-        width: 35%;
-    }
+	.NavLeftContainer {
+		width: 25%;
+	}
+	.NavRightContainer {
+		width: 35%;
+	}
 }
 @media screen and (max-width: 960px) {
-    .NavBar {
-        height: 120px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:  center;
-    }
-    .NavLeftContainer {
-        width: 100%;
-        text-align: center;
-        height: 50%;
-        margin: 15px auto;
-    }
-    .NavRightContainer {
-        width: 100%;
-        height: 50%;
-        text-align: center;
-    }
-
+	.NavBar {
+		height: 120px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.NavLeftContainer {
+		width: 100%;
+		text-align: center;
+		height: 50%;
+		margin: 15px auto;
+	}
+	.NavRightContainer {
+		width: 100%;
+		height: 50%;
+		text-align: center;
+	}
+}
