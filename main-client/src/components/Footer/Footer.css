@@ -48,3 +48,35 @@
 .Name {
     padding: 0px 20px;
 }
+
+@media screen and (max-width: 835px) {
+    .RightFooterContainer {
+        width: 50%;
+        font-size: 12px;
+    }
+    .LeftFooterContainer {
+        width: 50%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .RightFooterContainer {
+        width: 50%;
+    }
+    .RightFooterContainer img{
+        width: 20px;
+        height: 20px;
+    }
+    .LeftFooterContainer {
+        width: 50%;
+    }
+    .LeftFooterContainer img{
+        width: 20px;
+        height: 20px;
+    }
+    .FooterTitle {
+        font-size: 25px;
+        font-style: oblique;
+    }
+}
