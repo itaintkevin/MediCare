@@ -33,3 +33,41 @@
     box-shadow: 2px 2px  #d6cbcb;
     margin: 0px 10px 0px 10px;
 }
+
+@media screen and (max-width: 1675px) {
+    .NavLeftContainer {
+        width: 30%;
+    }
+    .NavRightContainer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .NavLeftContainer {
+        width: 25%;
+    }
+    .NavRightContainer {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .NavBar {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:  center;
+    }
+    .NavLeftContainer {
+        width: 100%;
+        text-align: center;
+        height: 50%;
+        margin: 15px auto;
+    }
+    .NavRightContainer {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+}
